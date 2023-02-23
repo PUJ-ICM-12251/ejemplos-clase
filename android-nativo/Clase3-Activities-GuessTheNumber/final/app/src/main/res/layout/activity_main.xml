@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="34dp"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/prompt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"
+            android:textSize="22sp"/>
+
+        <Space
+            android:id="@+id/space1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/prompt1"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:layout_below="@id/space1"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="@string/textButton1"
+            android:layout_below="@id/editText1" />
+
+
+</RelativeLayout>

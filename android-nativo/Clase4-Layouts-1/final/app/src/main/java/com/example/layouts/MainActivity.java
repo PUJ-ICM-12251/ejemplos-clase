@@ -25,7 +25,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
-    private static final String COUNTRIES_FILE = "countries.json";
+    private static final String COUNTRIES_FILE = "paises.json";
     Spinner countrySpinner;
     ListView countryList;
     JSONArray countries;
@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         countryList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Aquí se obtiene el valor del item seleccionado
-                String selectedItem = parent.getItemAtPosition(position).toString();
                 // Se llama a la actividad 2 y se envían los detalles del país seleccionado utilizando la posición y el array JSON "countries"
                 Intent intent = new Intent(MainActivity.this, Activity2.class);
                 try {
@@ -100,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                     throw new RuntimeException(e);
                 }
                 startActivity(intent);
-
             }
         });
     }
@@ -108,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     public String loadJSONFromAsset(String assetName) {
         String json = null;
         try {
-            InputStream is = this.getAssets().open("paises.json");
+            InputStream is = this.getAssets().open(assetName);
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

@@ -18,7 +18,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:text="Seleccione un país:"
         android:layout_below="@+id/imageView"/>
     <Spinner
