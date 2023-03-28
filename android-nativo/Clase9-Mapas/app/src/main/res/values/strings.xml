@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mapas</string>
+    <string name="title_activity_maps_nycactivity">MapsNYCActivity</string>
+    <string name="title_activity_maps_bogactivity">MapsBOGActivity</string>
+</resources>
