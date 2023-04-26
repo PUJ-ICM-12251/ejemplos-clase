@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338585743372",
+    "project_id": "icm-10-firebase",
+    "storage_bucket": "icm-10-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338585743372:android:e12b6c8db916b7d5aefe29",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338585743372-m96sgla9hum3g3m2fn33slf1f44m2b2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQyWEv57TTmBnhTk4nC3wkaDjFF3uYoek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338585743372-m96sgla9hum3g3m2fn33slf1f44m2b2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
